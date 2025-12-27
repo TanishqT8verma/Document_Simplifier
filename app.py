@@ -22,7 +22,7 @@ st.set_page_config(
 # ================= CONNECTION =================
 def test_connection():
     try:
-        r = requests.get(f"{API_URL}/api/tags", timeout=10)
+        r = requests.get(f"{API_URL}/api/tags", timeout=600)
         if r.status_code == 200:
             models = [m["name"] for m in r.json().get("models", [])]
             return f"✅ Connected to {MODEL}" if MODEL in models else f"❌ {MODEL} not found"
