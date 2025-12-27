@@ -8,7 +8,7 @@ import PyPDF2
 from docx import Document
 
 # ================= CONFIG =================
-API_URL = "http://192.168.1.252:11434"
+API_URL = ""http://127.0.0.1:11434""
 MODEL = "deepseek-r1:70b"
 UPLOAD_DIR = "uploads"
 
